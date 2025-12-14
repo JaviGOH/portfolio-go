@@ -1,0 +1,261 @@
+.logo {
+  width: 300px; 
+  height: 250px;
+  display: block;
+  margin-left: 2%;
+  margin-top: 0%;
+  margin-bottom: -18%;
+}
+.navegacionprincipal{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    padding-left: 50px;
+    padding-top: 18px;
+    padding-bottom: -18%;
+}
+.ContáctenosB {
+    background-color:lightslategray;
+    color: rgba(251, 249, 249, 0.91);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 15px;
+    border-style:groove;
+    border-radius: 55px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;  /* elimina el subrayado */
+    display: inline-block;
+}
+.ContáctenosB:hover {
+    background-color:rgb(18, 236, 54);
+    box-shadow: 0px 8px 16px rgb(18, 236, 54); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+.ContáctenosB:active {
+    transform: scale(0.9);/*Reduce ligeramente el tamaño del botón cuando se hace click*/
+}
+.Content-marketingB {
+    background-color:lightslategray;
+    color: rgba(242, 238, 238, 0.91);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 15px;
+    border-style:groove;
+    border-radius: 55px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+.Content-marketingB:hover {
+    background-color: aqua;
+    box-shadow: 0px 8px 16px aqua; /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+.Content-marketingB:active {
+    transform: scale(0.9);
+}
+.EcommerceB {
+    background-color:lightslategray;
+    color: rgba(1, 1, 1, 0.91);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 15px;
+    border-style:groove;
+    border-radius: 55px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+}
+.EcommerceB:hover {
+    background-color:rgb(244, 9, 197);
+    box-shadow: 0px 8px 16px rgb(244, 9, 197); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+.EcommerceB:active {
+    transform: scale(0.9);
+}
+.Desarrollo-webB {
+    background-color:lightslategray;
+    color: rgba(5, 5, 5, 0.91);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 15px;
+    border-style:groove;
+    border-radius: 55px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+}
+.Desarrollo-webB:hover {
+    background-color:rgb(201, 223, 6);
+    box-shadow: 0px 8px 16px rgb(201, 223, 6); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+.Desarrollo-webB:active {
+    transform: scale(0.9);
+}
+.PerformanceB {
+    background-color:lightslategray;
+    color: rgba(5, 5, 5, 0.91);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 15px;
+    border-style:groove;
+    border-radius: 55px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out
+}
+.PerformanceB:hover {
+    background-color:rgb(223, 6, 13);
+    box-shadow: 0px 8px 16px rgb(223, 6, 13); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+.PerformanceB:active {
+    transform: scale(0.9);
+}
+/*--------------------------------------------------------HEADER------------------------------------------------------*/
+body {
+    background-color: rgb(66, 64, 64);
+    background-size: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    text-align:center;  
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-position: 100%;
+    background-origin: content-box;
+    width: 100%;
+}
+h1{
+    margin-top: 7%;
+    display: block;
+    margin-bottom: -3%;
+}
+.video-wrapper {
+    width: 100%;         /* ancho flexible */
+    height: 250px;       /* altura fija que quieres */
+    overflow: hidden;    /* recorta lo que sobra */
+    position: relative;  /* importante para el video absoluto */
+    margin-top: -11%;
+    margin-bottom: 16%;
+    margin-right: 45px;
+}
+.video-wrapper video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%); /* centra el video */
+    
+}
+.Sobre-nosotros {
+    color:rgb(246, 242, 242);
+    display:flex;
+    background-color: rgb(247, 244, 244);
+    margin-top: -14%;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap; 
+    margin-right: 4%;
+    margin-bottom: -22%;
+}
+.Sobre-nosotros section {
+    flex: 1;
+    min-width: 200px; 
+    background-color: rgb(66, 64, 64) ; 
+    padding: 3rem;
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+.Sobre-nosotros section:hover {
+    background-color: rgb(8, 8, 8);
+    color: aqua;
+    transform: scale(1,3);
+    transform: scale(1.05);
+}
+.Contenedor-Contactenos {
+    color:rgb(245, 239, 239);
+    display:flex;
+    background-color: rgb(247, 244, 244);
+    margin-top: 40px;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    margin-right: 4%;
+    margin-top: 0%;  
+}
+.Contenedor-Contactenos section {
+    flex: 1;
+    min-width: 200px; 
+    background-color: rgb(66, 64, 64) ; 
+    padding: 3rem;
+    border-radius: 40px;
+}
+li{
+    display: inline;
+}
+/*------------------------------------------------------BODY-------------------------------------------------------------*/
+.pieprincipal {
+    margin-top: 380px;
+    padding-right: 250px;
+    padding-left: 800px;
+}
+/*-----------------------------------------------------FOOTER------------------------------------------------------------*/
+/*---------------------------------------------PÁGINA GOH DESARROLLO WEB-------------------------------------------------*/
+.Volver {
+    background-color:lightslategray;
+    color: rgba(253, 248, 248, 0.91);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 15px;
+    border-style:groove;
+    border-radius: 55px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;  /* elimina el subrayado */
+    display: inline-block;
+    margin-left: 75%;
+    margin-bottom: 3%;
+    width: 5%;
+}
+.Volver:hover {
+    background-color:rgb(48, 218, 10);
+    box-shadow: 0px 8px 16px rgb(71, 223, 6); /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+.Volver:active {
+    transform: scale(0.9);
+}
+/*----------------------------------------------------HEADER------------------------------------------------------------*/
+/*------------------------------------------------GO!|CONTÁCTENOS-------------------------------------------------------*/
+.Volver {
+    background-color:lightslategray;
+    color: rgba(253, 248, 248, 0.91);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: 15px;
+    border-style:groove;
+    border-radius: 55px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;  /* elimina el subrayado */
+    display: inline-block;
+    margin-left: 75%;
+    margin-bottom: 3%;
+    width: 5%;
+}
+.Volver:hover {
+    background-color:aqua;
+    box-shadow: 0px 8px 16px aqua; /* Aumenta el desplazamiento y la opacidad de la sombra */
+}
+.Volver:active {
+    transform: scale(0.9);
+}
+/*----------------------------------------------------HEADER------------------------------------------------------------*/
+/*---------------------------------------------GO!|CONTENTMARKETING-----------------------------------------------------*/
