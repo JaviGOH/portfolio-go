@@ -29,12 +29,12 @@ public class CalculatorView extends JFrame {
 
     public CalculatorView() {
         setTitle("Calculadora GO");
+        //setContentPane(panelBotones);
         setContentPane(rootPanel);
-        setContentPane(panelBotones);
 
-        panelBotones.setLayout(new GridLayout(5, 5));
+        //panelBotones.setLayout(new GridLayout(7, 6));
 
-        setSize(600,800);
+        setSize(500,600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
