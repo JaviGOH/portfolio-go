@@ -1,7 +1,6 @@
 package com.javigoh.calculator.view;
 
 import javax.swing.*;
-import java.awt.GridLayout;
 
 public class CalculatorView extends JFrame {
 
@@ -26,6 +25,7 @@ public class CalculatorView extends JFrame {
     private JButton Result;
     private JPanel panelPantalla;
     private JPanel panelBotones;
+    private JButton CE;
 
     public CalculatorView() {
         setTitle("Calculadora GO");
@@ -38,6 +38,90 @@ public class CalculatorView extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
+    }
+
+    public JButton getNumber7() {
+        return Number7;
+    }
+
+    public JButton getNumber8() {
+        return Number8;
+    }
+
+    public JButton getNumber9() {
+        return Number9;
+    }
+
+    public JButton getNumber1() {
+        return Number1;
+    }
+
+    public JButton getNumber0() {
+        return Number0;
+    }
+
+    public JButton getNumber2() {
+        return Number2;
+    }
+
+    public JButton getNumber3() {
+        return Number3;
+    }
+
+    public JButton getDivisionOperation() {
+        return DivisionOperation;
+    }
+
+    public JButton getSubtractOperation() {
+        return SubtractOperation;
+    }
+
+    public JButton getNumber4() {
+        return Number4;
+    }
+
+    public JButton getMultiplicationOperation() {
+        return MultiplicationOperation;
+    }
+
+    public JButton getNumber6() {
+        return Number6;
+    }
+
+    public JButton getNumber5() {
+        return Number5;
+    }
+
+    public JButton getPoint() {
+        return Point;
+    }
+
+    public JButton getAdditionOperation() {
+        return AdditionOperation;
+    }
+
+    public JButton getResult() {
+        return Result;
+    }
+
+    public JButton getCE() {
+        return CE;
+    }
+
+
+    //Este metodo mira el contenido de la pantalla de nuestra calculadora
+    public String getPantalla() {
+        return Pantalla.getText();
+    }
+
+    //Este metodo recibe un texto y lo coloca en la pantalla
+    public void setPantalla(String text) {
+        Pantalla.setText(text);
+    }
+
+    //Method to clean the calculator
+    public void clearPantalla() {
+        Pantalla.setText("");
     }
 }
 
