@@ -91,7 +91,19 @@ public class CalculatorController {
     }
 
     public void ejecutarOperacion () {
-
+        double segundoNumero = Double.parseDouble(view.getPantalla());
+        double resultado = 0;
+        if (operacion.equals("+")) {
+            resultado = model.add(primerNumero, segundoNumero);
+        } else if (operacion.equals("-")) {
+            resultado = model.subtract(primerNumero, segundoNumero);
+        } else if (operacion.equals("*")) {
+            resultado = model.multiply(primerNumero, segundoNumero);
+        } else if (operacion.equals("/") ) {
+            resultado = model.division(primerNumero, segundoNumero);
+        }
+        String resultadoFinal = String.valueOf(resultado);
+        view.setPantalla(resultadoFinal);
     }
 
     public void limpiarCalculadora() {
