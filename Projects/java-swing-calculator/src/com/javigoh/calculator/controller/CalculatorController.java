@@ -2,14 +2,21 @@ package com.javigoh.calculator.controller;
 
 import com.javigoh.calculator.model.CalculatorModel;
 import com.javigoh.calculator.view.CalculatorView;
+
+import javax.swing.*;
 import java.awt.event.ActionListener;
 
 public class CalculatorController {
 
+    private double primerNumero;
+    private String operacion;
+
     private CalculatorView view;
+    private CalculatorModel model;
 
     public CalculatorController(CalculatorView view) {
         this.view = view;
+        this.model = model;
 
         //Este metodo sirve para inicializar los listener que contiene dentro
         initListeners();
@@ -34,6 +41,7 @@ public class CalculatorController {
             }
         };
 
+        //Identificación de cada boton
         view.getNumber7().setActionCommand("7");
         view.getNumber8().setActionCommand("8");
         view.getNumber9().setActionCommand("9");
@@ -54,6 +62,7 @@ public class CalculatorController {
 
         view.getCE().setActionCommand("CE");
 
+        //Indicamos que codigo debe ejecutarse cuando se pulse un boton
         view.getNumber7().addActionListener(listener);
         view.getNumber8().addActionListener(listener);
         view.getNumber9().addActionListener(listener);
@@ -73,6 +82,20 @@ public class CalculatorController {
         view.getResult().addActionListener(listener);
 
         view.getCE().addActionListener(listener);
+    }
+
+    public void guardarPrimerNumeroYOperacion(String operacion) {
+        primerNumero = Double.parseDouble(view.getPantalla());
+        this.operacion = operacion;
+        view.clearPantalla();
+    }
+
+    public void ejecutarOperacion () {
+
+    }
+
+    public void limpiarCalculadora() {
+        view.clearPantalla();
     }
 }
 

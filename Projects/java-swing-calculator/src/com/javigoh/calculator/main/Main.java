@@ -1,6 +1,7 @@
 package com.javigoh.calculator.main;
 
 import com.javigoh.calculator.controller.CalculatorController;
+import com.javigoh.calculator.model.CalculatorModel;
 import com.javigoh.calculator.view.CalculatorView;
 
 public class Main {
