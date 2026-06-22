@@ -14,7 +14,7 @@ public class CalculatorController {
     private CalculatorView view;
     private CalculatorModel model;
 
-    public CalculatorController(CalculatorView view) {
+    public CalculatorController(CalculatorView view, CalculatorModel model) {
         this.view = view;
         this.model = model;
 
@@ -31,13 +31,26 @@ public class CalculatorController {
 
             switch (command) {
 
-                default:
-                    view.setPantalla(view.getPantalla() + command);
+                case "+":
+                case "-":
+                case "*":
+                case "/":
+                    guardarPrimerNumeroYOperacion(command);
+                    break;
+
+                case "=":
+                    ejecutarOperacion();
                     break;
 
                 case "CE":
                     view.clearPantalla();
+                    view.clearOperacion();
                     break;
+
+                default:
+                    view.setPantalla(view.getPantalla() + command);
+                    break;
+
             }
         };
 
@@ -87,27 +100,43 @@ public class CalculatorController {
     public void guardarPrimerNumeroYOperacion(String operacion) {
         primerNumero = Double.parseDouble(view.getPantalla());
         this.operacion = operacion;
+        view.setOperacion(view.getPantalla() + "" + operacion);
         view.clearPantalla();
     }
 
     public void ejecutarOperacion () {
+
         double segundoNumero = Double.parseDouble(view.getPantalla());
         double resultado = 0;
-        if (operacion.equals("+")) {
-            resultado = model.add(primerNumero, segundoNumero);
-        } else if (operacion.equals("-")) {
-            resultado = model.subtract(primerNumero, segundoNumero);
-        } else if (operacion.equals("*")) {
-            resultado = model.multiply(primerNumero, segundoNumero);
-        } else if (operacion.equals("/") ) {
-            resultado = model.division(primerNumero, segundoNumero);
+
+        switch (operacion) {
+
+            case "+":
+                resultado = model.add(primerNumero, segundoNumero);
+                break;
+
+            case "-":
+                resultado = model.subtract(primerNumero,segundoNumero);
+                break;
+
+            case "*":
+                resultado = model.multiply(primerNumero, segundoNumero);
+                break;
+
+            case "/":
+                resultado = model.division(primerNumero, segundoNumero);
+                break;
         }
-        String resultadoFinal = String.valueOf(resultado);
-        view.setPantalla(resultadoFinal);
+
+        view.setOperacion(primerNumero + "" + operacion + "" + segundoNumero + " =");
+        view.setPantalla(String.valueOf(resultado));
     }
 
     public void limpiarCalculadora() {
         view.clearPantalla();
+        view.clearOperacion();
+        primerNumero = 0;
+        operacion = null;
     }
 }
 

@@ -5,7 +5,6 @@ import javax.swing.*;
 public class CalculatorView extends JFrame {
 
     private JPanel rootPanel;
-
     private JTextField Pantalla;
     private JButton Number7;
     private JButton Number5;
@@ -26,6 +25,7 @@ public class CalculatorView extends JFrame {
     private JPanel panelPantalla;
     private JPanel panelBotones;
     private JButton CE;
+    private JLabel muestraOperacion;
 
     public CalculatorView() {
         setTitle("Calculadora GO");
@@ -123,5 +123,18 @@ public class CalculatorView extends JFrame {
     public void clearPantalla() {
         Pantalla.setText("");
     }
+
+    public String getOperacion() {
+        return muestraOperacion.getText();
+    }
+
+    public void setOperacion(String texto) {
+        muestraOperacion.setText(texto);
+    }
+
+    public void clearOperacion() {
+        muestraOperacion.setText("");
+    }
+
 }
 
