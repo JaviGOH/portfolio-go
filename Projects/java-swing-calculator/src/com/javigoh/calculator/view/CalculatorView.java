@@ -1,9 +1,14 @@
 package com.javigoh.calculator.view;
 
 import javax.swing.*;
+import javax.swing.text.Style;
+import javax.xml.transform.Result;
 import java.awt.*;
 
 public class CalculatorView extends JFrame {
+
+    private static final Color EQUALS_BUTTON_COLOR = new Color(46,204,113);
+    private static final Color CLEAR_BUTTON_COLOR = new Color(167,255,192);
 
     private JTextField Pantalla;
     private JLabel muestraOperacion;
@@ -64,6 +69,10 @@ public class CalculatorView extends JFrame {
         Point = new JButton(".");
         AdditionOperation = new JButton("+");
         Result = new JButton("=");
+
+        styleSpecialButton(Result,EQUALS_BUTTON_COLOR,Color.BLACK);
+        styleSpecialButton(CE, CLEAR_BUTTON_COLOR,Color.BLACK);
+
     }
 
     //Metodo para colocar cada uno de los componentes
@@ -97,11 +106,20 @@ public class CalculatorView extends JFrame {
         panelBotones.add(Point);
         panelBotones.add(AdditionOperation);
 
-        // abajo o en otra fila si amplías
+        // abajo o en otra fila si amplíamos
         panelBotones.add(Result);
 
         add(panelPantalla, BorderLayout.NORTH);
         add(panelBotones, BorderLayout.CENTER);
+    }
+
+    //Method for styling the special buttons (=) and (C)
+    private void styleSpecialButton (JButton button, Color color, Color colorTexto) {
+        button.setBackground(color);
+        button.setForeground(colorTexto);
+        button.setFont(new Font("Segoe UI",Font.BOLD,28));
+        button.setFocusPainted(false);
+        button.setCursor(new Cursor(Cursor.HAND_CURSOR));
     }
 
     public JButton getNumber7() {
