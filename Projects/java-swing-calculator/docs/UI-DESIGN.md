@@ -26,6 +26,7 @@ Planned colors:
 - Calculator display: Light green
 - Number buttons: Gray
 - Operation buttons: Dark gray
+- Clear button (C): Light green
 - Equals button (=): Green
 
 The calculator will use a dark theme with green accents to create a clean and distinctive visual identity. The display and the equals button will share the same color family to emphasize the result of each calculation.
