@@ -1,6 +1,7 @@
 package com.javigoh.calculator.view;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public class CalculatorView extends JFrame {
@@ -39,16 +40,17 @@ public class CalculatorView extends JFrame {
 
         Pantalla = new JTextField();
         Pantalla.setEditable(false);
-        Pantalla.setFont(new Font("Segoe UI", Font.BOLD, 24));
+        Pantalla.setFont(new Font("Segoe UI", Font.BOLD, 32));
         Pantalla.setHorizontalAlignment(SwingConstants.RIGHT);
 
         muestraOperacion = new JLabel("");
+        muestraOperacion.setFont(new Font("Segoe UI", Font.PLAIN,22));
 
         panelPantalla = new JPanel(new BorderLayout());
 
-        panelBotones = new JPanel(new GridLayout(5, 4));
+        panelBotones = new JPanel(new GridLayout(5, 4,10,10));
 
-        // Botones
+        // Buttons
         Number7 = new JButton("7");
         Number8 = new JButton("8");
         Number9 = new JButton("9");
@@ -90,6 +92,11 @@ public class CalculatorView extends JFrame {
         styleButton(Number2,NUMBER_BUTTON_COLOR,Color.WHITE);
         styleButton(Number3,NUMBER_BUTTON_COLOR,Color.WHITE);
         styleButton(Number0,NUMBER_BUTTON_COLOR,Color.WHITE);
+
+        //Apply borders
+        muestraOperacion.setBorder(BorderFactory.createEmptyBorder(15,15,15,15));
+        panelPantalla.setBorder(BorderFactory.createEmptyBorder(15,15,15,15));
+        panelBotones.setBorder(BorderFactory.createEmptyBorder(15,15,15,15));
 
     }
 

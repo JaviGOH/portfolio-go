@@ -2,22 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
----
-
-## [v1.1.0] - In Progress
+## [v1.1.0] - Unreleased
 
 ### Added
 - Project documentation.
 - UI design document.
 - Changelog document.
+- Reusable `styleButton()` method.
+- Color palette constants for button categories.
+
+### Changed
+- Redesigned calculator user interface.
+- Improved appearance of all calculator buttons.
+- Added spacing between buttons.
+- Added padding around the display and button panels.
+- Updated fonts to Segoe UI.
+- Increased operation label font size.
 
 ### Planned
-- Redesign calculator user interface.
-- Improve button appearance.
-- Improve calculator display.
 - Apply dark theme.
-- Add green accent color.
-- Improve user experience.
+- Apply green display color.
+- Improve calculator layout.
 
 ---
 
