@@ -10,7 +10,7 @@ public class Main {
 
         CalculatorView view = new CalculatorView();
         CalculatorModel model = new CalculatorModel();
-        CalculatorController controller = new CalculatorController(view, model);
+        CalculatorController controller = new CalculatorController(view,model);
 
         view.setVisible(true);
     }

@@ -1,14 +1,14 @@
 package com.javigoh.calculator.view;
 
 import javax.swing.*;
-import javax.swing.text.Style;
-import javax.xml.transform.Result;
 import java.awt.*;
 
 public class CalculatorView extends JFrame {
 
     private static final Color EQUALS_BUTTON_COLOR = new Color(46,204,113);
     private static final Color CLEAR_BUTTON_COLOR = new Color(167,255,192);
+    private static final Color NUMBER_BUTTON_COLOR = new Color(96,96,96);
+    private static final Color OPERATION_BUTTON_COLOR = new Color(64,64,64);
 
     private JTextField Pantalla;
     private JLabel muestraOperacion;
@@ -39,7 +39,7 @@ public class CalculatorView extends JFrame {
 
         Pantalla = new JTextField();
         Pantalla.setEditable(false);
-        Pantalla.setFont(new Font("Arial", Font.BOLD, 24));
+        Pantalla.setFont(new Font("Segoe UI", Font.BOLD, 24));
         Pantalla.setHorizontalAlignment(SwingConstants.RIGHT);
 
         muestraOperacion = new JLabel("");
@@ -70,12 +70,30 @@ public class CalculatorView extends JFrame {
         AdditionOperation = new JButton("+");
         Result = new JButton("=");
 
-        styleSpecialButton(Result,EQUALS_BUTTON_COLOR,Color.BLACK);
-        styleSpecialButton(CE, CLEAR_BUTTON_COLOR,Color.BLACK);
+        //Applying styles to buttons
+        styleButton(Result,EQUALS_BUTTON_COLOR,Color.BLACK);
+        styleButton(CE, CLEAR_BUTTON_COLOR,Color.BLACK);
+
+        styleButton(AdditionOperation, OPERATION_BUTTON_COLOR, Color.WHITE);
+        styleButton(SubtractOperation,OPERATION_BUTTON_COLOR,Color.WHITE);
+        styleButton(MultiplicationOperation,OPERATION_BUTTON_COLOR,Color.WHITE);
+        styleButton(DivisionOperation,OPERATION_BUTTON_COLOR,Color.WHITE);
+
+        styleButton(Point,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number7,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number8,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number9,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number4,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number5,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number6,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number1,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number2,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number3,NUMBER_BUTTON_COLOR,Color.WHITE);
+        styleButton(Number0,NUMBER_BUTTON_COLOR,Color.WHITE);
 
     }
 
-    //Metodo para colocar cada uno de los componentes
+    //Method for positioning each of the components
     private void layoutComponents() {
 
         setLayout(new BorderLayout());
@@ -113,8 +131,8 @@ public class CalculatorView extends JFrame {
         add(panelBotones, BorderLayout.CENTER);
     }
 
-    //Method for styling the special buttons (=) and (C)
-    private void styleSpecialButton (JButton button, Color color, Color colorTexto) {
+    //Method styles any calculator button
+    private void styleButton (JButton button, Color color, Color colorTexto) {
         button.setBackground(color);
         button.setForeground(colorTexto);
         button.setFont(new Font("Segoe UI",Font.BOLD,28));

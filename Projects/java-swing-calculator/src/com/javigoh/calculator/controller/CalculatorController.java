@@ -54,7 +54,7 @@ public class CalculatorController {
             }
         };
 
-        //Identificación de cada boton
+        //Identificación de cada boton, es el número que escribre en pantalla al pulsar cada botón
         view.getNumber7().setActionCommand("7");
         view.getNumber8().setActionCommand("8");
         view.getNumber9().setActionCommand("9");
@@ -128,7 +128,7 @@ public class CalculatorController {
                 break;
         }
 
-        view.setOperacion(primerNumero + "" + operacion + "" + segundoNumero + " =");
+        view.setOperacion(primerNumero + " " + operacion + " " + segundoNumero + " =");
         view.setPantalla(String.valueOf(resultado));
     }
 
