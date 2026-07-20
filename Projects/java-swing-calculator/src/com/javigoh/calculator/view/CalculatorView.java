@@ -1,11 +1,14 @@
 package com.javigoh.calculator.view;
 
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public class CalculatorView extends JFrame {
 
+    private static final Color WINDOW_BACKGROUND_COLOR = new Color(40,40,40);
+    private static final Color PRIMARY_TEXT_COLOR = Color.WHITE;
+    private  static final Color DISPLAY_BACKGROUND_COLOR = new Color(190,245,205);
+    private static final Color DISPLAY_BORDER_COLOR  = new Color(130,130,130);
     private static final Color EQUALS_BUTTON_COLOR = new Color(46,204,113);
     private static final Color CLEAR_BUTTON_COLOR = new Color(167,255,192);
     private static final Color NUMBER_BUTTON_COLOR = new Color(96,96,96);
@@ -42,9 +45,12 @@ public class CalculatorView extends JFrame {
         Pantalla.setEditable(false);
         Pantalla.setFont(new Font("Segoe UI", Font.BOLD, 32));
         Pantalla.setHorizontalAlignment(SwingConstants.RIGHT);
+        Pantalla.setBackground(DISPLAY_BACKGROUND_COLOR);
+        Pantalla.setBorder(BorderFactory.createLineBorder(DISPLAY_BORDER_COLOR, 5));
 
         muestraOperacion = new JLabel("");
         muestraOperacion.setFont(new Font("Segoe UI", Font.PLAIN,22));
+        muestraOperacion.setForeground(PRIMARY_TEXT_COLOR);
 
         panelPantalla = new JPanel(new BorderLayout());
 
@@ -98,6 +104,11 @@ public class CalculatorView extends JFrame {
         panelPantalla.setBorder(BorderFactory.createEmptyBorder(15,15,15,15));
         panelBotones.setBorder(BorderFactory.createEmptyBorder(15,15,15,15));
 
+        //Apply Window background color
+        getContentPane().setBackground(WINDOW_BACKGROUND_COLOR);
+        panelPantalla.setBackground(WINDOW_BACKGROUND_COLOR);
+        panelBotones.setBackground(WINDOW_BACKGROUND_COLOR);
+
     }
 
     //Method for positioning each of the components
@@ -145,6 +156,7 @@ public class CalculatorView extends JFrame {
         button.setFont(new Font("Segoe UI",Font.BOLD,28));
         button.setFocusPainted(false);
         button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+
     }
 
     public JButton getNumber7() {
