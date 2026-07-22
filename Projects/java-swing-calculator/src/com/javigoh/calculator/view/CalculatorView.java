@@ -2,6 +2,7 @@ package com.javigoh.calculator.view;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 public class CalculatorView extends JFrame {
 
@@ -31,11 +32,17 @@ public class CalculatorView extends JFrame {
 
         initComponents();
         layoutComponents();
+        configureWindow();
 
+    }
+
+    //Metodo para la configuración de la Ventana
+    private void configureWindow() {
         setSize(500,600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-
+        ImageIcon iconoCalculadoraGo = new ImageIcon(getClass().getResource("/resources/icons/calculadora-sobremesa.jpg"));
+        setIconImage(iconoCalculadoraGo.getImage());
     }
 
     //Metodo para crear cada uno de los componentes
