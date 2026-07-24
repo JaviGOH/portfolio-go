@@ -10,11 +10,11 @@ This project is part of my personal portfolio and has been developed to strength
 
 ### Application
 
-![Calculator UI](docs/images/calculator-ui-v1.1.0.png)
+![Calculator UI](docs/images/5969793847984328709.jpg))
 
 ### Project Structure (MVC)
 
-![MVC Structure](docs/images/mvc-project-structure.png)
+![MVC Structure](docs/images/Captura%20de%20pantalla%202026-07-24%20140348.png))
 
 ---
 
