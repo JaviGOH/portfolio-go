@@ -30,3 +30,9 @@ This document contains ideas and improvements planned for future versions of Por
 - Consider migrating to React.
 - Add multilingual support.
 - Connect projects dynamically from GitHub.
+
+## Internationalization
+
+- Add a language selector (ES | EN).
+- Translate all portfolio content into English.
+- Keep Spanish as the default language.
