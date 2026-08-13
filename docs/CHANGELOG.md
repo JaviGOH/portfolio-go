@@ -7,3 +7,9 @@
 - Moved assets into dedicated folders.
 - Renamed HTML pages following standard conventions.
 - Updated internal resource paths.
+
+### Documentation
+
+- Added `PROJECT-CHARTER.md`.
+- Added `CHANGELOG.md`.
+- Added `IDEAS.md`.

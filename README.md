@@ -21,13 +21,13 @@ Current technologies:
 
 - HTML5
 - CSS3
+- Responsive Design
 - Git
 - GitHub
 
 Future technologies:
 
 - JavaScript
-- Responsive Design
 - Additional technologies as the project evolves
 
 ---

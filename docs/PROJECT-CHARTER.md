@@ -24,12 +24,16 @@ Create a professional portfolio website to showcase my software development proj
 
 ## Technologies
 
+Current:
+
 - HTML5
 - CSS3
-- JavaScript
+- Git
+- GitHub
 
 Future:
 
+- JavaScript
 - React
 - TypeScript
 - Node.js (if needed)
