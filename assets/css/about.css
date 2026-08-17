@@ -1,0 +1,36 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 5rem;
+}
+
+.about-content {
+    max-width: 1200px;
+}
+
+#about h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    border-bottom: 2px solid #30E1FF;
+    padding-bottom: 0.4rem;
+}
+
+#about h3 {
+    font-size: 1.5rem;
+    color: #30E1FF;
+    margin-bottom: 0.8rem;
+}
+
+.about-description {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-description:not(.first) {
+    border-top: 1px solid rgba(48, 225, 255, 0.25);
+    padding-top: 1.5rem;
+}
