@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio personal de Javier Gallegos donde se muestran proyectos de desarrollo de software, tecnologías y trayectoria profesional."/>
 	<meta name="keywords" content="portfolio, software developer, HTML, CSS, JavaScript, Java, Git, GitHub, DAM"/>
     <title>Javier Gallegos | Software Developer Portfolio</title>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/header.css"/>
     <link rel="stylesheet" href="assets/css/hero.css"/>
     <link rel="stylesheet" href="assets/css/about.css"/>
+    <link rel="stylesheet" href="assets/css/projects.css"/>
 </head>
 
 <body>
@@ -67,7 +69,7 @@
 
             <div class="about-content">
 
-                <h2>Sobre mí</h2>
+                <h2 class="section-title">Sobre mí</h2>
 
                 <div class="about-description first">
 
@@ -112,93 +114,97 @@
 
         <section id="projects">
 
-            <h2>Proyectos</h2>
-            
-            <p>
-                Estos son algunos de los proyectos personales en los que he trabajado y que reflejan mi evolución como desarrollador de software. 
-                Cada uno de ellos ha supuesto un nuevo reto técnico y una oportunidad para seguir mejorando mis conocimientos y mi forma de desarrollar software.    
-            </p>
-
-            <article class="project-card">
-
-                <img src="ruta-de-la-imagen.jpg" alt="Fotografía de UI Portfolio GO">
-
-                <h3>Portfolio GO</h3>
-
+                <h2 class="section-title">Proyectos</h2>
+                
                 <p>
-                    Portfolio personal desarrollado para mostrar mis proyectos, habilidades y evolución como desarrollador de software siguiendo buenas prácticas
-                    de documentación, organización y control de versiones.
+                    Estos son algunos de los proyectos personales en los que he trabajado y que reflejan mi evolución como desarrollador de software. 
+                    Cada uno de ellos ha supuesto un nuevo reto técnico y una oportunidad para seguir mejorando mis conocimientos y mi forma de desarrollar software.    
                 </p>
 
-                <h4>Tecnologías</h4>
+                <div class="projects-grid">
 
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                </ul>
+                    <article class="project-card">
 
-                <p>
-                    <strong>Estado:</strong> En desarrollo 
-                </p>
+                        <img src="assets\images\portfolio-go\Portfolio-GO-Header-Hero-terminado.png" alt="Fotografía de UI Portfolio GO">
 
-                <a href="https://github.com/JaviGOH/portfolio-go" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                        <h3>Portfolio GO</h3>
 
-            </article>
+                        <p>
+                            Portfolio personal desarrollado para mostrar mis proyectos, habilidades y evolución como desarrollador de software siguiendo buenas prácticas
+                            de documentación, organización y control de versiones.
+                        </p>
 
-            <article class="project-card">
+                        <h4>Tecnologías</h4>
 
-                <img src="assets/images/calculator-go/calculator-ui-v1-2-0.png" alt="Interfaz de Calculadora GO">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
 
-                <h3>Calculadora GO</h3>
+                        <p class="project-status">
+                            <strong>Estado:</strong> En desarrollo 
+                        </p>
 
-                <p>
-                    Aplicación de escritorio desarrollada en Java siguiendo el patrón de arquitectura MVC. El proyecto se ha utilizado para practicar organización del código,
-                    Git, documentación y versionado.
-                </p>
+                        <a href="https://github.com/JaviGOH/portfolio-go" class="projects-button" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
 
-                <h4>Tecnologías</h4>
+                    </article>
 
-                <ul>
-                    <li>Java</li>
-                    <li>Swing</li>
-                    <li>MVC</li>
-                </ul>
+                    <article class="project-card">
 
-                <p>
-                    <strong>Estado:</strong> En desarrollo
-                </p>
+                        <img src="assets/images/calculator-go/calculator-ui-v1-2-0.png" alt="Interfaz de Calculadora GO">
 
-                <a href="https://github.com/JaviGOH/java-swing-calculators" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                        <h3>Calculadora GO</h3>
 
-            </article>
+                        <p>
+                            Aplicación de escritorio desarrollada en Java siguiendo el patrón de arquitectura MVC. El proyecto se ha utilizado para practicar organización del código,
+                            Git, documentación y versionado.
+                        </p>
 
-            <article class="project-card">
+                        <h4>Tecnologías</h4>
 
-                <img src="ruta-de-la-imagen.jpg" alt="Interfaz de Céntimo a Céntimo">
+                        <ul>
+                            <li>Java</li>
+                            <li>Swing</li>
+                            <li>MVC</li>
+                        </ul>
 
-                <h3>Céntimo a Céntimo</h3>
+                        <p class="project-status">
+                            <strong>Estado:</strong> En desarrollo
+                        </p>
 
-                <p>
-                    Proyecto web orientado a la gestión de las finanzas personales y al ahorro, desarrollado como Trabajo de Fin de Grado y concebido como un producto con 
-                    posibilidades de crecimiento y evolución.
-                </p>
+                        <a href="https://github.com/JaviGOH/java-swing-calculators" class="projects-button" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
 
-                <h4>Tecnologías</h4>
+                    </article>
 
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                </ul>
+                    <article class="project-card">
 
-                <p>
-                    <strong>Estado:</strong> En desarrollo
-                </p>
+                        <!--<img src="ruta-de-la-imagen.jpg" alt="Interfaz de Céntimo a Céntimo">-->
 
-                <a href="https://github.com/JaviGOH/centimo-a-centimo" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                        <h3>Céntimo a Céntimo</h3>
 
-            </article>
+                        <p>
+                            Proyecto web orientado a la gestión de las finanzas personales y al ahorro, desarrollado como Trabajo de Fin de Grado y concebido como un producto con 
+                            posibilidades de crecimiento y evolución.
+                        </p>
+
+                        <h4>Tecnologías</h4>
+
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <p class="project-status">
+                            <strong>Estado:</strong> En desarrollo
+                        </p>
+
+                        <a href="https://github.com/JaviGOH/centimo-a-centimo" class="projects-button" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+
+                    </article>
+
+                </div>
 
         </section>
 
