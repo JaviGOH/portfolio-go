@@ -91,3 +91,16 @@
     object-fit: contain;
     border-radius: 5px;
 }
+
+.project-badge {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 2rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color:yellow;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}

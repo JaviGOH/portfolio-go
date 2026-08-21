@@ -35,19 +35,25 @@
 }
 
 .hero-link {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background-color: #263F3F;
-    color: #30E1FF;
-    font-weight: 700;
-    border: 2px solid #30E1FF;
-    border-radius: 8px;
-    transition: color 0.3s, border-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    background-color:white;
+    border-radius: 35px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    transition: border-color 0.5s;
+}
+
+.hero-link img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .hero-link:hover {
-    color: #FF0006;  
-    border-color: #FF0006;
+    transform: scale(1.1);
 }
 
 #hero img {
