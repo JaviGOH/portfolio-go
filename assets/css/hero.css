@@ -1,14 +1,17 @@
 #hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 4rem;
     padding: 4rem 5rem;
     margin-top: 2rem;
 }
 
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
 .hero-content {
-    max-width: 800px;
+    max-width: 850px;
 }
 
 .hero-greeting {
@@ -38,17 +41,18 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 75px;
-    height: 75px;
-    background-color:white;
-    border-radius: 35px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
-    transition: border-color 0.5s;
 }
 
 .hero-link img {
-    width: 40px;
-    height: 40px;
+    display: block;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
 }
 
@@ -56,8 +60,7 @@
     transform: scale(1.1);
 }
 
-#hero img {
-    width: 350px;
+.img-Author img{
     height: auto;
     border-radius: 50%;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);

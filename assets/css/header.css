@@ -2,10 +2,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem 8.5rem;
     background-color: #263F3F;
     border-bottom: 2px solid #30E1FF;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img{
