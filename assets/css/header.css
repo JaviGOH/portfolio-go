@@ -12,7 +12,7 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
 }
 
 .logo img{
@@ -28,10 +28,54 @@ nav .container {
 .nav-links a {
     color: #30E1FF;
     font-weight: bold;
+    white-space: nowrap;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
     text-decoration:overline;
     color: #FF0006;  
+}
+
+/*------------------ RESPONSIVE --------------------*/
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    nav .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 370px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
 }
