@@ -3,11 +3,7 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    padding: 4rem 5rem;
-}
-
-.about-content {
-    max-width: 1200px;
+    /*padding: 4rem 5rem;*/
 }
 
 #about h2 {

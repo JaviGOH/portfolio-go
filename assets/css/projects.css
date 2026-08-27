@@ -1,7 +1,6 @@
 #projects {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 0;
+    /*margin: 0 auto;*/
+    padding: 0 0;
 }
 
 .projects-grid {
@@ -18,7 +17,6 @@
 }
 
 #projects > p {
-    max-width: 1200px;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 3rem;
@@ -31,6 +29,7 @@
     border: 1px solid rgba(48, 225, 255, 0.25);
     border-radius: 8px;
     padding: 1.5rem;
+    margin-top: 4rem;
     height: 100%;
 }
 
