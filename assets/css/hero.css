@@ -1,5 +1,4 @@
 #hero {
-    /*padding: 4rem 5rem;*/
     margin-top: 2rem;
 }
 
@@ -61,8 +60,14 @@
     transform: scale(1.1);
 }
 
+.img-Author {
+    flex-shrink: 0;
+}
+
 .img-Author img{
-    height: auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
 }
@@ -73,11 +78,28 @@
 
     #hero .container {
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
     }
 
     .hero-content {
         max-width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    #hero h1 {
+        font-size: 2.7rem;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    #hero h1 {
+        font-size: 2.5rem;
     }
 
 }

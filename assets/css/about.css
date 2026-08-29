@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    /*padding: 4rem 5rem;*/
 }
 
 #about h2 {
@@ -26,4 +25,27 @@
 .about-description:not(.first) {
     border-top: 1px solid rgba(48, 225, 255, 0.25);
     padding-top: 1.5rem;
+}
+
+/*--------------------- RESPONSIVE -------------------*/
+
+@media (max-width: 700px) {
+
+    #about h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #about h3 {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .about-description {
+        text-align: left;
+    }
+
 }
