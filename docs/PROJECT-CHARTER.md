@@ -22,6 +22,10 @@ Create a professional portfolio website to showcase my software development proj
 - Clients
 - Other developers
 
+## Methodology
+ 
+The project is developed iteratively by versions, following **Semantic Versioning (SemVer)**. Each meaningful milestone (architecture, styling, deployment, functionality, etc.) is tagged and documented through a GitHub Release and the project [CHANGELOG.md](CHANGELOG.md), rather than following a fixed schedule or deadlines.
+
 ## Technologies
 
 Current:

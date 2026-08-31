@@ -8,11 +8,8 @@ This document contains ideas and improvements planned for future versions of Por
 
 ## Features
 
-- Projects section.
-- About me page.
 - Contact form.
 - Download CV.
-- Responsive navigation menu.
 
 ## Technical Improvements
 
@@ -25,7 +22,6 @@ This document contains ideas and improvements planned for future versions of Por
 ## Long-term
 
 - Consider migrating to React.
-- Add multilingual support.
 - Connect projects dynamically from GitHub.
 
 ## Internationalization
