@@ -34,6 +34,7 @@ Current:
 - CSS3
 - Git
 - GitHub
+- Cloudflare Pages (hosting & deployment)
 
 Future:
 
@@ -45,3 +46,7 @@ Future:
 ## Repository
 
 https://github.com/JaviGOH/portfolio-go
+
+## Live Site
+ 
+https://javiergallegos.es

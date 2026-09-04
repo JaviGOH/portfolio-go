@@ -69,16 +69,18 @@ portfolio-go/
  
 ## Project Status
  
-**Current version: v0.2.0**
+**Current version: v0.3.0**
  
 | Version | Status | Description |
 |---------|--------|--------------|
 | v0.1.0  | ✅ Released | Full project architecture and base HTML structure |
 | v0.2.0  | ✅ Released | Complete CSS styling, organized by section, with full responsive design |
-| v0.3.0  | 🔜 Planned | Custom domain, Cloudflare Pages hosting, and production deployment |
+| v0.3.0  | ✅ Released | Custom domain, Cloudflare Pages hosting, and production deployment |
 | v0.4.0  | 🔜 Planned | JavaScript functionality |
  
 See [CHANGELOG.md](docs/CHANGELOG.md) for full version history and details.
+
+🌐 **Live site:** [javiergallegos.es](https://javiergallegos.es)
  
 ---
  
