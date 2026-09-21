@@ -27,6 +27,31 @@
     padding-top: 1.5rem;
 }
 
+/*--------------------- SCROLL ANIMATION -------------------*/
+
+.about-animate {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-delay-1 {
+    transition-delay: 0.3s;
+}
+
+.about-delay-2 {
+    transition-delay: 0.4s;
+}
+
+.about-delay-3 {
+    transition-delay: 0.5s;
+}
+
 /*--------------------- RESPONSIVE -------------------*/
 
 @media (max-width: 700px) {
